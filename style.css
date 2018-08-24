@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.header {
+    flex: 2 100%;
+    display: flex;
+    flex-flow: row wrap;
+    background: #2e3436;
+    color: #d0d0d0;
+    padding: 5px;
+    font-size: 200%;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.header .title { 
+    color: #00af00;
+}
+
+.header .cursor {
+    background: #d0d0d0;
+    height: 1.1em;
+    width: 0.6em;
+    animation-name: blinking;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.navigation {
+    flex: 1 auto;
+    background: tomato;
+}
+
+.main {
+    flex: 4 0px;
+    background: cornflowerblue;
+}
+
+@keyframes blinking {
+    0% {background: #d0d0d0;}
+    49% {background: #d0d0d0;}
+    50% {background: inherit;}
+    99% {background: inherit;}
+}
