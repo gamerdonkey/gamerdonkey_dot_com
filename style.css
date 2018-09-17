@@ -16,18 +16,22 @@ body {
     flex-flow: row wrap;
 
     background: #2e3436;
-    padding: 5px;
 
     color: #d0d0d0;
     font-size: 200%;
     font-weight: bold;
 }
 
-.header .title { 
+.logo {
+    display: flex;
+    padding: 5px;
+}
+
+.logo .title { 
     color: #00af00;
 }
 
-.header .cursor {
+.logo .cursor {
     background: #d0d0d0;
     height: 1.1em;
     width: 0.6em;
@@ -38,32 +42,27 @@ body {
 }
 
 .navigation {
-    flex: 0 auto;
     display: flex;
-    flex-flow: column;
-    height: 100vh;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    justify-content: flex-end;
     
-    background: #555753;
-
-    font-size: 150%;
-}
-
-.navigation ul {
-    list-style: none;
-
     margin: 0;
-    padding-left: 0;
+    list-style: none;
 }
 
 .navigation a {
     text-decoration: none;
     display: block;
     padding: 0.5em;
+    margin-right: 1em;
+
+    font-size: 75%;
     color: white;
 }
 
 .navigation a:hover {
-    background: #2e3436;
+    background: #d0d0d0;
 }
 
 .main {
